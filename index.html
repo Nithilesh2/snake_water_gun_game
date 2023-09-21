@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake ,Water And Gun</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <div class="loader">
+        <dotlottie-player class="preloader" src="https://lottie.host/6fc11b19-2beb-4133-a0bc-c31000f44490/Lu786xAcPV.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+    </div>
+
+    <div class="home">
+        <div class="games">
+            <div class="botgame">
+                <div class="bot123">
+                    <img class="round1" src="./images/botimage.png">
+                    <div class="computer">Computer</div>
+                </div>
+            </div>
+            <div class="multigame">
+                <div class="multi123">
+                    <img class="round2" src="./images/two user.png">
+                    <div class="passnplay">Play With Friend</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- play with bot code -->
+
+    <div class="withbot">
+        <div class="backbtn">
+            <img class="back" src="./images/left-arrow.png">
+            <!-- <ion-icon class="back" name="arrow-back-circle"></ion-icon> -->
+        </div>
+        <div class="box">
+            <div class="userchoose">
+                <div class="choose">
+                    <img src="./images/snake.png" class="images" id="snake" alt="snake">
+                    <img src="./images/water.png" class="images" id="water" alt="water">
+                    <img src="./images/gun.png" class="images" id="gun" alt="gun">
+                </div>
+                <h3>Choose your option </h3>
+                <div class="choosed">
+                    <div class="userchoosed">User Side</div><div class="botchoosed">Bot Side</div>
+                </div>
+            </div>
+            <hr>
+            <div class="points">
+                <div class="user">
+                    <div class="us1"><img src="./images/user.png" class="user1" class="pointvalues"></div>
+                    <div class="userpoints">0</div>
+                </div>
+                <div class="bot">
+                    <div class="us2"><img src="./images/bot.png" class="bot1" class="pointvalues"></div>
+                    <div class="botpoints">0</div>
+                </div>
+            </div>
+            <div class="display"></div>
+            <button type="reset">Reset</button>
+        </div>
+    </div>
+
+</body>
+<script src="./index.js" defer></script>
+</html>
