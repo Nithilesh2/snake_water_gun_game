@@ -41,6 +41,8 @@ body {
   display: block;
   /* display: none; */
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .games {
@@ -218,7 +220,7 @@ h3 {
   width: 100px;
   position: absolute;
   top: 50px;
-  transition: all 0.5s;
+  transition: all 0.7s;
   cursor: pointer;
 }
 
@@ -375,7 +377,7 @@ button {
     width: 55px;
     position: absolute;
     top: 50px;
-    transition: all 0.5s;
+    transition: all 0.7s;
     cursor: pointer;
   }
 
@@ -484,4 +486,125 @@ button {
     cursor: pointer;
     box-shadow: 5px 5px 10px #782b72;
   }
+}
+/* ----------- */
+/* won display */
+/* ----------- */
+
+.won_main{
+  padding: 40px 0 0 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: -10000px;
+  transition: all .7s;
+}
+
+.wonbox {
+  transition: all .7s;
+  height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px 15px 20px #006c14;
+    background-color: #41db41;
+}
+
+.congratulations{
+  display: flex;
+  font-size: 40px;
+  font-family: 'Quicksand', sans-serif;
+  flex-direction: row;
+}
+
+.con{
+  color: #00005c;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
+  color: #0b00ff;
+}
+
+.cu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0 30px 0;
+}
+
+h2{
+  color: rgb(0 10 255);
+  font-size: 24px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 10px 0 0 0;
+}
+
+@media screen and (max-width: 550px) {
+
+  .won_main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: -10000px;
+    padding: 30px 0 0 0;
+  }
+  .wonbox {
+    height: 240px;
+      width: 340px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 15px 15px 20px #006c14;
+      background-color: #41db41;
+  }
+  
+  .congratulations{
+    display: flex;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    flex-direction: row;
+  }
+  
+  .con{
+    color: #00005c;
+  }
+  
+  h1{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    color: #0b00ff;
+  }
+  
+  .cu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 30px 0;
+  }
+  
+  h2{
+    color: rgb(0 10 255);
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 0 0 0;
+  }  
 }
