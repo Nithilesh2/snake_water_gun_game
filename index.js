@@ -20,7 +20,7 @@ botgame.addEventListener("click", () => {
     loader.style.left = "0";
     home.style.left = "-10000px";
   }, 200);
-  
+
   setInterval(() => {
     loader.style.left = "-1000px";
     withbox.style.display = "block";
@@ -82,8 +82,10 @@ setTimeout(() => {
 
 snake.addEventListener("click", () => {
   if (userpoints == "10") {
+    con.innerHTML = "Congratulations";
+    loss.innerHTML = "You won the match";
     wonorloss.style.left = "0";
-    wonorloss.addEventListener("click",()=>{
+    wonorloss.addEventListener("click", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -96,8 +98,8 @@ snake.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-    wonorloss.addEventListener("touchstart",()=>{
+    });
+    wonorloss.addEventListener("touchstart", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -110,15 +112,13 @@ snake.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-  } 
-  
-  else if (botpoints == "10") {
+    });
+  } else if (botpoints == "10") {
     wonorloss.style.left = "0";
     con.innerHTML = "Sorry";
     loss.innerHTML = "You lost the match :( ,<br> better luck next time";
-    loss.style.lineHeight = "1.5"
-    wonorloss.addEventListener("click",()=>{
+    loss.style.lineHeight = "1.5";
+    wonorloss.addEventListener("click", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -131,8 +131,8 @@ snake.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-    wonorloss.addEventListener("touchstart",()=>{
+    });
+    wonorloss.addEventListener("touchstart", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -145,10 +145,8 @@ snake.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-  } 
-  
-  else {
+    });
+  } else {
     choose = 1;
     userchoosed.innerHTML = "User chooses Snake";
     random = Math.floor(Math.random() * 3) + 1;
@@ -195,10 +193,11 @@ snake.addEventListener("click", () => {
 });
 
 water.addEventListener("click", () => {
-
   if (userpoints == "10") {
+    con.innerHTML = "Congratulations";
+    loss.innerHTML = "You won the match";
     wonorloss.style.left = "0";
-    wonorloss.addEventListener("click",()=>{
+    wonorloss.addEventListener("click", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -211,8 +210,8 @@ water.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-    wonorloss.addEventListener("touchstart",()=>{
+    });
+    wonorloss.addEventListener("touchstart", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -225,15 +224,13 @@ water.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-  } 
-  
-  else if (botpoints == "10") {
+    });
+  } else if (botpoints == "10") {
     wonorloss.style.left = "0";
     con.innerHTML = "Sorry";
     loss.innerHTML = "You lost the match :( ,<br> better luck next time";
-    loss.style.lineHeight = "1.5"
-    wonorloss.addEventListener("click",()=>{
+    loss.style.lineHeight = "1.5";
+    wonorloss.addEventListener("click", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -246,8 +243,8 @@ water.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-    wonorloss.addEventListener("touchstart",()=>{
+    });
+    wonorloss.addEventListener("touchstart", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -260,59 +257,58 @@ water.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-  }
-
-  else{
+    });
+  } else {
     choose = 2;
-  userchoosed.innerHTML = "User chooses water";
-  random = Math.floor(Math.random() * 3) + 1;
-  botchoosed.innerHTML = "Bot Turn";
-  setTimeout(() => {
-    bguser.style.backgroundColor = "red";
-    bgbot.style.backgroundColor = "green";
-    bguser.style.transition = "all .5s";
-    bgbot.style.transition = "all .5s";
-  }, 300);
-
-  setTimeout(() => {
-    if (random == 1) {
-      botchoosed.innerHTML = "Bot chooses Snake";
-    } else if (random == 2) {
-      botchoosed.innerHTML = "Bot chooses water";
-    } else {
-      botchoosed.innerHTML = "Bot chooses gun";
-    }
+    userchoosed.innerHTML = "User chooses water";
+    random = Math.floor(Math.random() * 3) + 1;
+    botchoosed.innerHTML = "Bot Turn";
+    setTimeout(() => {
+      bguser.style.backgroundColor = "red";
+      bgbot.style.backgroundColor = "green";
+      bguser.style.transition = "all .5s";
+      bgbot.style.transition = "all .5s";
+    }, 300);
 
     setTimeout(() => {
-      if (choose == 2 && random == 2) {
-        display.innerHTML = "Match Tied";
-      } else if (choose == 2 && random == 3) {
-        display.innerHTML = "User got point";
-        userpoints += 1;
-        userpointsdisplay.innerHTML = userpoints;
+      if (random == 1) {
+        botchoosed.innerHTML = "Bot chooses Snake";
+      } else if (random == 2) {
+        botchoosed.innerHTML = "Bot chooses water";
       } else {
-        display.innerHTML = "Bot got point";
-        botpoints += 1;
-        botpointsdisplay.innerHTML = botpoints;
+        botchoosed.innerHTML = "Bot chooses gun";
       }
-    }, 500);
-  }, 1000);
-  setTimeout(() => {
-    userchoosed.innerHTML = "User Turn";
-    bguser.style.backgroundColor = "green";
-    bgbot.style.backgroundColor = "red";
-    bguser.style.transition = "all .5s";
-    bgbot.style.transition = "all .5s";
-  }, 2500);
+
+      setTimeout(() => {
+        if (choose == 2 && random == 2) {
+          display.innerHTML = "Match Tied";
+        } else if (choose == 2 && random == 3) {
+          display.innerHTML = "User got point";
+          userpoints += 1;
+          userpointsdisplay.innerHTML = userpoints;
+        } else {
+          display.innerHTML = "Bot got point";
+          botpoints += 1;
+          botpointsdisplay.innerHTML = botpoints;
+        }
+      }, 500);
+    }, 1000);
+    setTimeout(() => {
+      userchoosed.innerHTML = "User Turn";
+      bguser.style.backgroundColor = "green";
+      bgbot.style.backgroundColor = "red";
+      bguser.style.transition = "all .5s";
+      bgbot.style.transition = "all .5s";
+    }, 2500);
   }
 });
 
 gun.addEventListener("click", () => {
-
   if (userpoints == "10") {
+    con.innerHTML = "Congratulations";
+    loss.innerHTML = "You won the match";
     wonorloss.style.left = "0";
-    wonorloss.addEventListener("click",()=>{
+    wonorloss.addEventListener("click", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -325,8 +321,8 @@ gun.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-    wonorloss.addEventListener("touchstart",()=>{
+    });
+    wonorloss.addEventListener("touchstart", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -339,15 +335,13 @@ gun.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-  } 
-  
-  else if (botpoints == "10") {
+    });
+  } else if (botpoints == "10") {
     wonorloss.style.left = "0";
     con.innerHTML = "Sorry";
     loss.innerHTML = "You lost the match :( ,<br> better luck next time";
-    loss.style.lineHeight = "1.5"
-    wonorloss.addEventListener("click",()=>{
+    loss.style.lineHeight = "1.5";
+    wonorloss.addEventListener("click", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -360,8 +354,8 @@ gun.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-    wonorloss.addEventListener("touchstart",()=>{
+    });
+    wonorloss.addEventListener("touchstart", () => {
       wonorloss.style.left = "-10000px";
       userchoosed.innerHTML = "user chooses";
       botchoosed.innerHTML = "bot chooses";
@@ -374,50 +368,48 @@ gun.addEventListener("click", () => {
       button.innerHTML = "Reset";
       button.style.transition = "all 2s";
       wonorloss.style.transition = "all 2s";
-    })
-  } 
-
-  else{
+    });
+  } else {
     choose = 3;
-  userchoosed.innerHTML = "User chooses gun";
-  random = Math.floor(Math.random() * 3) + 1;
-  botchoosed.innerHTML = "Bot Turn";
-  setTimeout(() => {
-    bguser.style.backgroundColor = "red";
-    bgbot.style.backgroundColor = "green";
-    bguser.style.transition = "all .5s";
-    bgbot.style.transition = "all .5s";
-  }, 300);
-  setTimeout(() => {
-    if (random == 1) {
-      botchoosed.innerHTML = "Bot chooses Snake";
-    } else if (random == 2) {
-      botchoosed.innerHTML = "Bot chooses water";
-    } else {
-      botchoosed.innerHTML = "Bot chooses gun";
-    }
-
+    userchoosed.innerHTML = "User chooses gun";
+    random = Math.floor(Math.random() * 3) + 1;
+    botchoosed.innerHTML = "Bot Turn";
     setTimeout(() => {
-      if (choose == 3 && random == 3) {
-        display.innerHTML = "Match Tied";
-      } else if (choose == 3 && random == 1) {
-        display.innerHTML = "User got point";
-        userpoints += 1;
-        userpointsdisplay.innerHTML = userpoints;
+      bguser.style.backgroundColor = "red";
+      bgbot.style.backgroundColor = "green";
+      bguser.style.transition = "all .5s";
+      bgbot.style.transition = "all .5s";
+    }, 300);
+    setTimeout(() => {
+      if (random == 1) {
+        botchoosed.innerHTML = "Bot chooses Snake";
+      } else if (random == 2) {
+        botchoosed.innerHTML = "Bot chooses water";
       } else {
-        display.innerHTML = "Bot got point";
-        botpoints += 1;
-        botpointsdisplay.innerHTML = botpoints;
+        botchoosed.innerHTML = "Bot chooses gun";
       }
-    }, 500);
-  }, 1000);
-  setTimeout(() => {
-    userchoosed.innerHTML = "User Turn";
-    bguser.style.backgroundColor = "green";
-    bgbot.style.backgroundColor = "red";
-    bguser.style.transition = "all .5s";
-    bgbot.style.transition = "all .5s";
-  }, 2500);
+
+      setTimeout(() => {
+        if (choose == 3 && random == 3) {
+          display.innerHTML = "Match Tied";
+        } else if (choose == 3 && random == 1) {
+          display.innerHTML = "User got point";
+          userpoints += 1;
+          userpointsdisplay.innerHTML = userpoints;
+        } else {
+          display.innerHTML = "Bot got point";
+          botpoints += 1;
+          botpointsdisplay.innerHTML = botpoints;
+        }
+      }, 500);
+    }, 1000);
+    setTimeout(() => {
+      userchoosed.innerHTML = "User Turn";
+      bguser.style.backgroundColor = "green";
+      bgbot.style.backgroundColor = "red";
+      bguser.style.transition = "all .5s";
+      bgbot.style.transition = "all .5s";
+    }, 2500);
   }
 });
 
