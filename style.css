@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: -1000px;
+  left: -100000px;
   top: 0px;
 }
 .preloader {
