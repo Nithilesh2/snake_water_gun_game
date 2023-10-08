@@ -12,7 +12,7 @@ let loader = document.querySelector(".loader");
 window.addEventListener("load", () => {
   home.style.left = "0";
   withbox.style.display = "none";
-  loader.style.left = "-1000px";
+  loader.style.left = "-100000px";
 });
 
 botgame.addEventListener("click", () => {
@@ -22,7 +22,7 @@ botgame.addEventListener("click", () => {
   }, 200);
 
   setInterval(() => {
-    loader.style.left = "-1000px";
+    loader.style.left = "-100000px";
     withbox.style.display = "block";
     backbtn.style.display = "block";
     home.style.left = "-10000px";
