@@ -33,12 +33,15 @@ botgame.addEventListener("click", () => {
 
 backbtn.addEventListener("click", () => {
   // home.style.display = "block";
-  home.style.left = "0px";
-  home.style.transition = "all .5s";
-  backbtn.style.transition = "all .5s";
-  withbox.style.transition = "all 5s";
-  withbox.style.display = "none";
-  backbtn.style.display = "none";
+  // home.style.left = "0px";
+  // home.style.transition = "all .5s";
+  // backbtn.style.transition = "all .5s";
+  // withbox.style.transition = "all 5s";
+  // withbox.style.display = "none";
+  // backbtn.style.display = "none";
+  setTimeout(()=>{
+    document.location.reload();
+  },200)
 });
 
 //-----------------------------------//
