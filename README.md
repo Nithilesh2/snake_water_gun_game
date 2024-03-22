@@ -1,4 +1,4 @@
-# Snake, Water, and Gun Game Web Application
+# Snake, Water, and Gun Game
 
 ## Overview
 
